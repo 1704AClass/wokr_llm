@@ -1,1 +1,2 @@
 项目跟进使用rabbitmq完成静态生成
+fegin调用
