@@ -6,6 +6,8 @@ import com.ningmeng.framework.domain.course.CourseMarket;
 import com.ningmeng.framework.domain.course.CoursePic;
 import com.ningmeng.framework.domain.course.Teachplan;
 import com.ningmeng.framework.domain.course.ext.CategoryNode;
+import com.ningmeng.framework.domain.course.response.CoursePublishResult;
+import com.ningmeng.framework.domain.course.response.CourseView;
 import com.ningmeng.framework.domain.course.ext.TeachplanNode;
 import com.ningmeng.framework.domain.course.response.AddCourseResult;
 import com.ningmeng.framework.domain.system.SysDictionary;
@@ -108,6 +110,18 @@ public class CourseController implements CourseControllerApi {
     @DeleteMapping("/deleteCoursePic/{courseId}")
     public ResponseResult deleteCoursePic(@PathVariable("courseId") String courseId) {
         return service.deleteCoursePic(courseId);
+    }
+
+    @Override
+    @GetMapping("/getcourseview/{id}")
+    public CourseView getcourseview(@PathVariable("id") String id) {
+        return service.getcourseview(id);
+    }
+
+    @Override
+    @PostMapping("/preview/{id}")
+    public CoursePublishResult preview(@PathVariable("id") String id) {
+        return service.preview(id);
     }
 
 }

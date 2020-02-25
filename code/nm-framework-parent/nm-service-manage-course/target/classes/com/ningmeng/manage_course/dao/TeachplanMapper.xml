@@ -21,7 +21,7 @@
        LEFT JOIN teachplan b ON b.parentid=a.id
        LEFT JOIN teachplan c ON c.parentid =b.id
        WHERE  a.parentid='0'
-       <if Test="_parameter!=null and _parameter!='' ">
+       <if test="_parameter!=null and _parameter!='' ">
           and a.courseid=#{courseId}
        </if>
 
