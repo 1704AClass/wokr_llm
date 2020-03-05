@@ -9,6 +9,9 @@
         <option value="$PROJECT_DIR$/nm-framework-parent/pom.xml" />
         <option value="$PROJECT_DIR$/nm-framework-parent/nm-service-manage-course/pom.xml" />
         <option value="$PROJECT_DIR$/nm-framework-parent/nm-service-base-filesystem/pom.xml" />
+        <option value="$PROJECT_DIR$/nm-framework-parent/nm-service-search/pom.xml" />
+        <option value="$PROJECT_DIR$/nm-framework-parent/nm-service-manage-media-processor/pom.xml" />
+        <option value="$PROJECT_DIR$/nm-framework-parent/nm-service-manage-media/pom.xml" />
       </list>
     </option>
   </component>
